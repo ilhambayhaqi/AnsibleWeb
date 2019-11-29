@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #488F89;
+}
+
+.box1{
+	padding: 10px 40px 20px;
+}
+
+.box2{
+	font-family: sans-serif;
+	color: #FEFEFE;
+	padding: 0px 100px;
+	
+}
+
+.box2 h2{
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	border-bottom: #F9DD15 4px solid;
+	letter-spacing: 3px;
+}
+
+.text-box{
+	width: 80%;
+	overflow: hidden;
+	margin: 20px 10px;
+	padding: 3px 0px 5px 10px;
+	border-left: #B19417 3px solid;
+	border-bottom: #B19417 3px solid;
+}
+
+.text-box input{
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	width: 100%;
+	font-size: 16px;
+	letter-spacing: 2px;
+	
+}
+
+.box2 .btn{
+	background: none;
+	border: #B19417 2px solid;
+	color: #B7B7B7;
+	padding: 5px 15px;
+	float: right;
+	font-size: 14px;
+	margin: 5px 17%;
+}
+
+.box2 a{ 
+	float: right;
+ 	display: block;
+ 	text-align: center;
+  	margin: 5px 10%;
+	padding: 5px 15px;
+	text-decoration: none;
+	color: #7B7B7B;
+}
+
+.box2 a:hover{
+	color: white;
+}
+
+.box2 .btn:hover{
+	color: white;
+	border: #F9DD15 2px solid;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li{
+	float: left;
+}
+
+img{
+	margin-top: 15px;
+	height: 100px;
+	width: auto;
+}
+
+
+li h1{
+	margin-left: 30px;
+	color: #FEFEFE;	
+	font-size: 55px;
+	font-family: arial;
+}
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+	width: 70%;
+	left: 0;
+	background-color: #333333;
+}
+
+/* Control the right side */
+.right {
+  	width: 30%;
+	right: 0;
+  	background-image: url("../img/AJKBg2.jpg");
+	background-size: 200% 100%;
+	background-position: 90%;
+	filter: opacity(50%);
+}
+
+
+@media only screen and (max-width: 768px) {
+	.left{
+		width: 100%;
+	}
+	#module{ 
+		position: absolute;
+		top: 0px; 
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		background-image: url("../img/AJKBg2.jpg");
+		filter: opacity(10%);
+		background-size: auto 100%;
+		background-position: 60%;
+		z-index: -1;
+	}
+	.right { width: 0%;}
+}
