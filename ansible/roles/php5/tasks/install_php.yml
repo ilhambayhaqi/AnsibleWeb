@@ -1,0 +1,6 @@
+- name: install packages
+  become: yes
+  apt: name={{ item }} update_cache=yes state=latest
+  with_items:
+    - mcrypt
+    - php

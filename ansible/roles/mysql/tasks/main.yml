@@ -1,0 +1,4 @@
+---
+- include: preinstall.yml
+- include: install_mysql.yml
+- include: postinstall_mysql.yml

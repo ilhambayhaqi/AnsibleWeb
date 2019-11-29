@@ -1,0 +1,8 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+  - name: restart mysql
+    service: name=mysql enabled=yes state=restarted
+
+#It Works Alhamdulillah

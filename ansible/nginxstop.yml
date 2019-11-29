@@ -1,0 +1,7 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+  - name: stop nginx service 
+    service: name=nginx state=stopped
+#It Works Alhamdulillah

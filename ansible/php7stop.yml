@@ -1,0 +1,7 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+  - name: stop php-fpm service 
+    service: name=php7.0-fpm state=stopped
+#It Works Alhamdulillah

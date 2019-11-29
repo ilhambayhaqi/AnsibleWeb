@@ -1,0 +1,7 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+  - name: restart php service 
+    service: name=php7.0-fpm state=restarted
+#It Works Alhamdulillah

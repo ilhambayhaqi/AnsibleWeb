@@ -1,0 +1,10 @@
+---
+- name: Deploy Nginx
+  hosts: worker
+  become: yes
+  roles:
+    - role: install nginx
+
+#  - name: restart nginx service 
+#    service: name=nginx state=restarted
+#It Works Alhamdulillah

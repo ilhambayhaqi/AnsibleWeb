@@ -1,0 +1,10 @@
+---
+# Menjalankan roles
+
+- hosts: worker
+#  vars:
+#    proxy_env: 'http://ITS-569704-375ad:62d26@proxy.its.ac.id:8080'
+#    username: 'ITS-569704-3745d'
+#    password: '62d26'
+  roles:
+    - { role: mysql }

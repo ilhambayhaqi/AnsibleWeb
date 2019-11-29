@@ -1,0 +1,2 @@
+- name: Install sublimetext for Debian family OS
+  apt: deb={{sublimetext_tmp_deb}}

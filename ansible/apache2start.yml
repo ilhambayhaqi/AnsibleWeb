@@ -1,0 +1,6 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+  - name: start apache2 service 
+    service: name=apache2 state=started

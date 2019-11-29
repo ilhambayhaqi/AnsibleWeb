@@ -1,0 +1,8 @@
+---
+- name: Install the MySQL packages
+  become: yes
+  apt:
+    name: "{{ ubuntu_mysql_pkgs }}"
+    #shell:  myLongRunningApp > /dev/tcp/localhost/4000 2>&1
+    #update_cache: yes
+

@@ -1,0 +1,10 @@
+---
+- hosts: worker
+  vars:
+    php_packages:
+      - php
+      - php-cli
+      - php-mysql
+      - php-fpm
+  roles:
+    - { role: geerlingguy.php }

@@ -1,0 +1,5 @@
+---
+- hosts: worker
+  become: yes
+  roles:
+     - { role: chaosmail.sublime-text }

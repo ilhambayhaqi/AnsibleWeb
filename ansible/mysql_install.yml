@@ -1,0 +1,15 @@
+---
+- hosts: worker
+  become: yes
+  vars:
+    mysql_root_password: ansible
+    mysql_databases:
+      - name: ansible
+        encoding: latin1
+        collation: latin1_general_ci
+    mysql_users:
+      - name: ansibleuser
+        password: ansibleuser
+        privileges: "ansible.*:ALL"
+  roles:
+    - { role: geerlingguy.mysql }

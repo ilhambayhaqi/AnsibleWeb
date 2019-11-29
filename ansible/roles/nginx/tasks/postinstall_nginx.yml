@@ -1,0 +1,15 @@
+---
+- name: replacing nginx.conf file
+  become: yes
+  template:
+    src=nginx.conf
+    dest='/etc/nginx/nginx.conf'
+  notify: nginx restart
+
+- name: copying default to sites-enable
+  become: yes
+  template:
+    src=default
+    dest='/etc/nginx/sites-available/default'
+  notify: nginx restart
+  tag: post-install

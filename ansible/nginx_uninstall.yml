@@ -1,0 +1,11 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+    - name: stop nginx
+      service:
+          name: nginx
+          state: stopped
+    - name: ensure nginx is not installed
+      apt: name=nginx state=absent
+ 

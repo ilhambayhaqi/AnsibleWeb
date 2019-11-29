@@ -1,0 +1,4 @@
+---
+sublimetext_arch: "{% if ansible_architecture == 'x86_64' %}amd64{% else %}i386{% endif %}"
+sublimetext_dl_source: "https://download.sublimetext.com"
+sublimetext_build: 3126

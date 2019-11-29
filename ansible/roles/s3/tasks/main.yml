@@ -1,0 +1,3 @@
+---
+- include: preinstall_s3.yml
+- include: install_s3.yml

@@ -1,0 +1,7 @@
+---
+- name: install apache2
+  become: yes
+  apt: name={{ item }} state=latest update_cache=true
+  with_items:
+    - apache2
+  notify: apache2 restart

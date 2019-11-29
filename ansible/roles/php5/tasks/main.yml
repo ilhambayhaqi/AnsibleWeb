@@ -1,0 +1,4 @@
+---
+- include: preinstall.yml
+- include: install_php.yml
+- include: postinstall_php.yml

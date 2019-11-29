@@ -1,0 +1,3 @@
+---
+proxy_env:
+  http_proxy: "http://ITS-562870-b60dc:6ac51@proxy.its.ac.id:8080"

@@ -1,0 +1,6 @@
+---
+- name: installing sublime-text 3
+  become: yes
+  apt: name={{ item }} state=latest update_cache=true
+  with_items:
+    - sublime-text

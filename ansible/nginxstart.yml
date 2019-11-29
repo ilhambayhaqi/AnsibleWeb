@@ -1,0 +1,7 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+  - name: start nginx service 
+    service: name=nginx state=started
+#It Works Alhamdulillah

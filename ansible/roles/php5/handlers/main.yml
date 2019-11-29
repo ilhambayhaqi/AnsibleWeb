@@ -1,0 +1,4 @@
+---
+- name: restart php5-fpm
+  become: yes
+  action: name=php5-fpm state=restarted

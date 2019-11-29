@@ -1,0 +1,10 @@
+---
+- hosts: worker
+  become: yes
+  tasks:
+    - name: install latest nginx
+      apt: name=nginx state=latest
+    - name: start nginx service
+      service:
+          name: nginx
+          state: started

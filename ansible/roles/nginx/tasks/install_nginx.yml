@@ -1,0 +1,10 @@
+---
+- name: install nginx
+  become: yes
+  vars:
+    proxy_env: 'http://ITS-553468-dc885:0e820@proxy.its.ac.id:8080'
+    username: 'ITS-562870-b60dc'
+    password: '6ac51'
+  apt: name={{ item }} state=latest update_cache=true
+  with_items:
+    - nginx

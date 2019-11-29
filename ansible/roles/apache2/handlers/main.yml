@@ -1,0 +1,12 @@
+---
+- name: apache2 restart
+  become: yes
+  action: service name=apache2 state=restarted
+
+- name: apache2 stop
+  become: yes
+  action: service name=apache2 state=stopped
+
+- name: apache2 start
+  become: yes
+  action: service name=apache2 state=started
